@@ -181,3 +181,34 @@ Import-Csv .\reports\invalid_assets.csv | Format-Table -AutoSize
 ## Project Goal
 
 Demonstrate a practical data engineering quality-control step: ingest asset inventory data, apply repeatable validation rules, isolate unreliable records, and produce traceable quality metrics before downstream processing.
+
+
+## Automated Testing
+
+The project includes automated unit tests using pytest.
+
+The tests cover:
+
+- Valid asset records
+- Missing required fields
+- Duplicate asset IDs
+- Duplicate serial numbers
+- Invalid and future purchase dates
+- Multiple supported date formats
+- Negative and nonnumeric purchase costs
+- Unsupported asset statuses and types
+- Missing CSV columns and empty files
+- Multiple validation errors per record
+
+### Run Tests
+
+```bash
+python -m pytest tests/ -v
+```
+
+### Run Test Coverage
+
+```bash
+python -m pytest tests/ --cov=validator --cov-report=term-missing
+```
+
