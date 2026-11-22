@@ -1,0 +1,2 @@
+asset_id,asset_name,asset_type,owner,purchase_date,purchase_cost,status,serial_number
+A003,Cisco Router,Network,David,3/12/2025,800,Maintenance,SN1003

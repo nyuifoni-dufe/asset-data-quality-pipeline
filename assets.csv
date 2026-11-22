@@ -1,0 +1,9 @@
+asset_id,asset_name,asset_type,owner,purchase_date,purchase_cost,status,serial_number
+A001,Dell Laptop,Laptop,John,1/10/2025,1200,Active,SN1001
+A002,HP Printer,Printer,Sarah,6/15/2024,450,Active,SN1002
+A003,Cisco Router,Network,David,3/12/2025,800,Maintenance,SN1003
+A004,Lenovo Laptop,Laptop,,2/1/2025,950,Active,SN1004
+A005,Dell Monitor,Monitor,Mary,1/20/2025,-150,Active,SN1005
+A006,HP Server,Server,James,invalid-date,5000,Active,SN1006
+A002,Canon Printer,Printer,Alice,4/10/2025,400,Unknown,SN1007
+A008,Office Monitor,Monitor,Robert,5/15/2025,300,Active,SN1001

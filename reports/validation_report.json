@@ -1,0 +1,77 @@
+{
+  "generated_at": "2026-11-21T06:07:20.696788+00:00",
+  "source_file": "assets.csv",
+  "summary": {
+    "total_records": 8,
+    "valid_records": 1,
+    "invalid_records": 7,
+    "validation_rate": 12.5,
+    "total_issues": 8,
+    "issues_by_type": {
+      "DUPLICATE_SERIAL": 2,
+      "DUPLICATE_ASSET_ID": 2,
+      "MISSING_REQUIRED": 1,
+      "NEGATIVE_COST": 1,
+      "INVALID_DATE": 1,
+      "INVALID_STATUS": 1
+    }
+  },
+  "issues": [
+    {
+      "line": 2,
+      "asset_id": "A001",
+      "field": "serial_number",
+      "code": "DUPLICATE_SERIAL",
+      "message": "Duplicate serial number: SN1001"
+    },
+    {
+      "line": 3,
+      "asset_id": "A002",
+      "field": "asset_id",
+      "code": "DUPLICATE_ASSET_ID",
+      "message": "Duplicate asset ID: A002"
+    },
+    {
+      "line": 5,
+      "asset_id": "A004",
+      "field": "owner",
+      "code": "MISSING_REQUIRED",
+      "message": "owner is required"
+    },
+    {
+      "line": 6,
+      "asset_id": "A005",
+      "field": "purchase_cost",
+      "code": "NEGATIVE_COST",
+      "message": "Purchase cost cannot be negative"
+    },
+    {
+      "line": 7,
+      "asset_id": "A006",
+      "field": "purchase_date",
+      "code": "INVALID_DATE",
+      "message": "Invalid purchase date: invalid-date"
+    },
+    {
+      "line": 8,
+      "asset_id": "A002",
+      "field": "asset_id",
+      "code": "DUPLICATE_ASSET_ID",
+      "message": "Duplicate asset ID: A002"
+    },
+    {
+      "line": 8,
+      "asset_id": "A002",
+      "field": "status",
+      "code": "INVALID_STATUS",
+      "message": "Unsupported status: Unknown"
+    },
+    {
+      "line": 9,
+      "asset_id": "A008",
+      "field": "serial_number",
+      "code": "DUPLICATE_SERIAL",
+      "message": "Duplicate serial number: SN1001"
+    }
+  ]
+}
